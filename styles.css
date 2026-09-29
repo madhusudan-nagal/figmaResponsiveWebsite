@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1c1a3e;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #1c1a3e;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container,
+.hero-container,
+.trust-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topbar {
+  background-color: #3c3172;
+  color: white;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+.topbar p {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.nav ul{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.header,
+
+.logo,
+.hero-container,
+.hero-buttons,
+.demo-link,
+.rating,
+.trust-box,
+.logos,
+.feature,
+.feature-list li,
+.highlights-list,
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header,
+.trust-box {
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.btn {
+  background-color: #f5dfe2;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid #f5dfe2;
+  border-radius: 6px;
+}
+
+.icon-pink {
+  background-color: #f5dfe2;
+}
+
+.icon-yellow {
+  background-color: #f3e2b8;
+}
+
+.icon-purple {
+  background-color: #d9d8fb;
+}
+
+h1,
+h2 {
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+.feature {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.feature-img {
+  width: 50%;
+  position: relative;
+}
+
+.feature-img .info-card {
+  position: absolute;
+  width: 45%;
+  bottom: 5%;
+  right: 0;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  min-height: 180px;
+  width:50%;
+}
+
+.hero-img,
+.feature-img {
+  position: relative;
+}
+
+.info-card {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 60%;
+  bottom:45%;
+  
+}
+
+.feature-img .info-card {
+  top: 55%;
+  left: 55%;
+}
+
+.trust-box {
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.logos img {
+  width: 45px;
+}
+
+.highlights {
+  background-color: #3c3172;
+  color: white;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+
+.highlight p {
+  margin-bottom: 0;
+}
