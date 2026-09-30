@@ -132,7 +132,7 @@ img {
 margin-left: auto;
 }
 
-/* ---------- Hero ---------- */
+/* ----- hero section or 1st page ------- */
 
 .hero-text h1{
   font-size: 55px;
@@ -180,7 +180,7 @@ margin-left: auto;
   object-position: top;  
 }
 
-/* ---------- Trust logos ---------- */
+/* ----- trust section or 2nd page ------- */
 
 .trust-box {
   justify-content: baseline;
@@ -203,7 +203,7 @@ margin-left: auto;
   to   { transform: translateX(700px); }
 }
 
-/* ---------- Feature ---------- */
+/* ---- feature ---- */
 
 .feature {
   margin-top: 50px;
@@ -268,7 +268,7 @@ margin-left: auto;
   gap: 10px;
 }
 
-/* ---------- Highlights ---------- */
+/* ------ highlights ------ */
 
 .highlights {
   background-color: #3c3172;
@@ -281,7 +281,7 @@ margin-left: auto;
   margin-bottom: 0;
 }
 
-/* ---------- Contact section ---------- */
+/* ----- contact section ---------- */
 
 .hero {
   display: flex;
@@ -372,7 +372,7 @@ margin-left: auto;
 
 
 
-/* ---------- Updates / blog cards ---------- */
+/* --- Updates and cards ----- */
 
 .updates {
   width: 90%;
@@ -430,7 +430,7 @@ margin-left: auto;
 }
 
 
-/* ---------- Stats section ---------- */
+/* ---- stats section ----- */
 
 .stats {
   display: flex;
@@ -503,7 +503,7 @@ margin-left: auto;
 }
 
 
-/* ---------- FAQ section ---------- */
+/* --- faq section ------- */
 
 .faq {
   display: flex;
@@ -569,7 +569,7 @@ margin-left: auto;
   justify-content: center;
 }
 
-/* ---------- Footer ---------- */
+/* -------footer--- */
 
 .footer {
   margin-top: 80px;

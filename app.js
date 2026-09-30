@@ -1,4 +1,5 @@
 const typing_header = document.querySelector(".hero-text h1");
+console.log(typing_header);
 const just_text = typing_header.textContent;
 let index = 0;
 let removing = false;
