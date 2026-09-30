@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   font-family: Arial, sans-serif;
   color: #1c1a3e;
+  padding: 0 40px;
+  gap: 30px;
 }
 
 ul {
@@ -33,7 +36,7 @@ img {
 .topbar {
   background-color: #3c3172;
   color: white;
-  padding: 12px 0;
+  padding: 15px;
   overflow: hidden;
 }
 
@@ -72,9 +75,9 @@ img {
 .header{
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
   justify-content: flex-start;
-  padding: 25px 0;
+  padding: 40px 0;
   
 }
 
@@ -117,11 +120,6 @@ margin-left: auto;
   background-color: #d9d8fb;
 }
 
-h1,
-h2 {
-  margin-bottom: 25px;
-}
-
 .feature {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -139,17 +137,22 @@ h2 {
   right: 0;
 }
 
-.hero-text h1 {
-  font-size: 48px;
+.hero-text h1{
+  font-size: 55px;
   min-height: 180px;
 }
 
+.hero-text p {
+    width: 70%;
+}
 
 .hero-text{
+  display :flex;
+  flex-direction: column;
+  gap:32px;
   width: 50%;
   
 }
-
 
 .feature-img {
    width: 50%;
@@ -158,12 +161,11 @@ h2 {
 
 
 .hero-img{
-  
   position: relative;
   background-color: #f5dfe2;
   margin-left: auto;
   flex-wrap: wrap;
-  width: 45%;
+  width: 44%;
   height: 500px;
   border-radius: 5px;
   bottom: 20px;
@@ -179,13 +181,13 @@ h2 {
   overflow: hidden;
 }
 
+
 .img1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;   /* keep her head, crop the bottom */
+  object-position: top;  
 }
-
 
 .info-card {
   position: absolute;
@@ -194,10 +196,10 @@ h2 {
 }
 @keyframes heartbeat {
   
-  0% , 100% {transform : scale(1)}
+  0% {transform : scale(1)}
   15%  {transform : scale(1.2)}
-  45% {transform : scale(1)}
-  75% {transform : scale(1.2)}
+  45% {transform : scale(0.9)}
+  75% {transform : scale(1.1)}
   
 }
 
@@ -209,11 +211,19 @@ h2 {
 .trust-box {
   border: 2px solid #e5e5e5;
   border-radius: 6px;
-  padding: 30px;
+  padding: 30px; 
 }
 
 .logos img {
   width: 45px;
+  animation: slide 4s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(700px); }
 }
 
 .highlights {
@@ -225,4 +235,154 @@ h2 {
 
 .highlight p {
   margin-bottom: 0;
+}
+
+
+
+/* ---------- Contact section ---------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+}
+
+.hero-left h2 {
+  font-size: 40px;
+}
+
+.hero-left p {
+  width: 80%;
+}
+
+.hero-bold {
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 80%;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+.input-box img {
+  width: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+  color: #1c1a3e;
+}
+
+.btn-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  color: #1c1a3e;
+  cursor: pointer;
+}
+
+.hero-right {
+  position: relative;
+  width: 44%;
+  height: 500px;
+  margin-left: auto;
+  background-color: #f5dfe2;
+  border-radius: 5px;
+}
+
+.person-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 105%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+/* ---------- Updates / blog cards ---------- */
+
+.updates {
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.updates h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.updates > p {
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-tag {
+  color: #9795b5;
+  font-size: 14px;
+}
+
+.card h3 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.card .icon {
+  margin-top: auto;
+  transition: background-color 0.3s;
+}
+
+.card .icon:hover {
+  background-color: #f5dfe2;
 }
