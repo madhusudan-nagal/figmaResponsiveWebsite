@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive UI (Tailwind)</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="text-navy leading-[normal] px-4 md:px-5 lg:px-10">
+
+
+  <!-- Topbar -->
+  <div class="bg-brand text-white p-3.75 overflow-hidden">
+    <marquee behavior='alternate'>This is an announcement tagline for you to insert</marquee>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full md:w-[90%] mx-auto flex flex-wrap md:flex-nowrap items-center gap-5 md:gap-10 py-6 md:py-10">
+    <a class="flex items-center gap-5 font-bold" href="#">
+      <img src="images/Icon.png" alt="" />
+      <img src="images/uifry.png" alt="uifry" />
+    </a>
+
+    <nav class="order-3 w-full md:order-0 md:w-auto">
+      <ul class="flex justify-between md:justify-start md:gap-5">
+        <li><a class="font-bold" href="#">Home</a></li>
+        <li><a class="font-bold" href="#">About</a></li>
+        <li><a class="font-bold" href="#">Pricing</a></li>
+        <li><a class="font-bold" href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="ml-auto bg-blush px-6.25 py-3 rounded-md font-bold">Contact Us</a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="w-full md:w-[90%] mx-auto flex flex-col md:flex-row items-stretch md:items-center gap-7.5 md:gap-5">
+      <div class="flex flex-col gap-6 md:gap-8 w-full md:w-1/2">
+        <h1 class="text-[34px] md:text-[42px] lg:text-[55px] lg:min-h-45 font-bold">Launch a software businesses website today with us!</h1>
+        <p class="w-full lg:w-[70%]">
+          Launch a business today with our help and get it done with amazing
+          launch features, websites and more with uifry. We help business like
+          yours thrive every day and beyond.
+        </p>
+
+        <div class="flex flex-wrap md:flex-nowrap items-center gap-5">
+          <a href="#contact" class="bg-blush px-6.25 py-3.5 rounded-md font-bold">Contact Now</a>
+          <a href="#demo" class="flex items-center gap-5 font-bold">
+            <span class="inline-block w-11.25 h-11.25 leading-11.25 text-center border-2 border-blush rounded-md" aria-hidden="true">></span>
+            <span>Book a Demo Today</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <span class="inline-block w-11.25 h-11.25 leading-11.25 text-center border-2 border-blush rounded-md bg-blush" aria-hidden="true">★</span>
+          <p>Rated 4.9 out of 1200 reviews</p>
+        </div>
+      </div>
+
+      <div class="relative md:bottom-5 w-full md:w-[44%] md:ml-auto h-95 md:h-127.5 bg-blush rounded-[5px]">
+        <div class="absolute left-0 top-0 w-full h-full md:-left-10 md:-top-2.5 md:w-[80%] md:h-127.5 overflow-hidden">
+          <img class="w-full h-full object-cover object-top" src="images/image.png" alt="woman with laptop" />
+        </div>
+        <img class="absolute left-2.5 bottom-2.5 w-[45%] md:left-auto md:bottom-auto md:top-0 md:w-auto md:right-[55%]" src="images/visitors-chart.png" alt="New visitors chart" />
+      </div>
+    </section>
+
+
+    <!-- Trust -->
+    <section class="w-full md:w-[90%] mx-auto mt-10">
+      <div class="flex flex-col items-start md:flex-row md:items-center gap-5 border-2 border-line rounded-md p-5 md:p-[30px]">
+        <p>Trusted by over 100+ businesses worldwide!</p>
+        <ul class="flex flex-wrap md:flex-nowrap items-center gap-5">
+          <li><img class="w-11.25" src="images/intercom.png" alt="Intercom" /></li>
+          <li><img class="w-11.25" src="images/marvel.png" alt="Marvel" /></li>
+          <li><img class="w-11.25" src="images/zapier.png" alt="Zapier" /></li>
+          <li><img class="w-11.25" src="images/treehouse.png" alt="Treehouse" /></li>
+          <li><img class="w-11.25" src="images/notion.png" alt="Notion" /></li>
+          <li><img class="w-11.25" src="images/shazam.png" alt="Shazam" /></li>
+        </ul>
+      </div>
+    </section>
+
+     <section class="feature container">
+      <div class="feature-img">
+        <img src="images/man-2.png" alt="smiling man" />
+        <img class="info-card" src="images/visitors-chart.png" alt="New visitors chart" />
+      </div>
+
+      <div class="feature-text">
+        <h2>Let your business thrive under our supervision</h2>
+        <p>
+          Launch a business today with our help and get it done with amazing
+          launch features, websites and more with uifry. We help business like
+          yours thrive every day and beyond.
+        </p>
+        <p class="feature-note">We are making every business grow!</p>
+
+        <ul class="feature-list">
+          <li>
+            <span class="icon icon-pink" aria-hidden="true">✓</span>
+            <span>Super useful and easy to use interface</span>
+          </li>
+          <li>
+            <span class="icon icon-pink" aria-hidden="true">✓</span>
+            <span>Easiest way to grow your business in days</span>
+          </li>
+        </ul>
+
+        <a href="#contact" class="btn btn-arrow">
+          Contact Now
+          <span aria-hidden="true">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <ul class="highlights-list">
+        <li class="highlight">
+          <span class="icon icon-pink" aria-hidden="true">✓</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+        <li class="highlight">
+          <span class="icon icon-yellow" aria-hidden="true">◷</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+        <li class="highlight">
+          <span class="icon icon-purple" aria-hidden="true">⇪</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Let your business thrive under our supervision</h2>
+        <p>
+          Launch a business today with our help and get it done with amazing
+          launch features, websites and more with uifry. We help business like
+          yours thrive every day and beyond.
+        </p>
+        <p class="hero-bold">We are making every business grow!</p>
+        <div class="contact-form">
+          <div class="input-box">
+            <img src="images/user-icon.png" alt="" />
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div class="input-box">
+            <img src="images/send-icon.png" alt="" />
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <button class="btn btn-full">
+            Contact Now
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img class="person-img" src="images/woman.png" alt="smiling woman" />
+        <!-- <img class="info-card" src="images/chart.png" alt="Business thrive supervision chart" /> -->
+      </div>
+    </section>
+
+    <section class="updates">
+      <h2>Our latest updates for you here!</h2>
+      <p>What's happening around the World.</p>
+      <div class="cards">
+        <div class="card">
+          <img src="images/blog1.png" alt="team meeting" />
+          <p class="card-tag">Growth</p>
+          <h3>15 ways to grow your saas in 21 days with no money</h3>
+          <a href="#" class="icon">></a>
+        </div>
+        <div class="card">
+          <img src="images/blog2.png" alt="business presentation" />
+          <p class="card-tag">Career</p>
+          <h3>Why everyone is moving today to subscriptions</h3>
+          <a href="#" class="icon">></a>
+        </div>
+        <div class="card">
+          <img src="images/blog3.png" alt="people working on laptops" />
+          <p class="card-tag">Design</p>
+          <h3>9 ways to make it quick and never look back again in your life</h3>
+          <a href="#" class="icon">></a>
+        </div>
+      </div>
+    </section>
+
+        <section class="stats container">
+      <div class="stats-text">
+        <h2>Let your business thrive under our supervision</h2>
+        <p>
+          Launch a business today with our help and get it done with amazing
+          launch features, websites and more with uifry. We help business like
+          yours thrive every day and beyond.
+        </p>
+
+        <ul class="stats-list">
+          <li class="stat">
+            <span class="icon icon-pink" aria-hidden="true">✓</span>
+            <div>
+              <p class="stat-number">100+</p>
+              <p class="stat-label">Successful Projects</p>
+            </div>
+          </li>
+          <li class="stat">
+            <span class="icon icon-pink" aria-hidden="true">✓</span>
+            <div>
+              <p class="stat-number">100+</p>
+              <p class="stat-label">Successful Projects</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Contact Now</a>
+          <a href="#demo" class="demo-link">
+            <span class="icon" aria-hidden="true">></span>
+            <span>Book a Demo Today</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="stats-img">
+        <img src="images/man.png" alt="smiling man" />
+        <img class="info-card" src="images/chart.png" alt="Project stats card" />
+      </div>
+    </section>
+
+        <section class="highlights container">
+      <ul class="highlights-list">
+        <li class="highlight">
+          <span class="icon icon-pink" aria-hidden="true">✓</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+        <li class="highlight">
+          <span class="icon icon-yellow" aria-hidden="true">✓</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+        <li class="highlight">
+          <span class="icon icon-purple" aria-hidden="true">✓</span>
+          <p>Super useful and easy to with over 100+ customisations!</p>
+        </li>
+      </ul>
+    </section>
+
+        <section class="faq container">
+      <div class="faq-header">
+        <img src="images/Icon.png" alt="" />
+        <h2>Frequently asked questions</h2>
+        <p>What's happening around the World.</p>
+      </div>
+
+            <div class="faq-list">
+        <div class="faq-item faq-open">
+          <div class="faq-question">
+            <p>What is the best way to create a saas business today?</p>
+            <span>−</span>
+          </div>
+          <p class="faq-answer">
+            Launch a business today with our help and get it done with amazing
+            launch features, websites and more with uifry. We help business like
+            yours thrive every day and beyond.
+          </p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <p>What is the best way to create a saas business today?</p>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <p>What is the best way to create a saas business today?</p>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <p>What is the best way to create a saas business today?</p>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <p>What is the best way to create a saas business today?</p>
+            <span>+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Contact Now</a>
+        <a href="#demo" class="demo-link">
+          <span class="icon" aria-hidden="true">></span>
+          <span>Book a Demo Today</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-top container">
+      <a class="logo" href="#">
+        <img src="images/Icon.png" alt="" />
+        <img src="images/uifry.png" alt="uifry" />
+      </a>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>All rights reserved ® uifry.com | Terms and conditions apply!</p>
+      <ul class="socials">
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="Flickr"><i class="fa-brands fa-flickr"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>    </div>
+  </footer>
+
+  </main>
+
+</body>
+
+</html>
